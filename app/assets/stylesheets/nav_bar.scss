@@ -5,7 +5,7 @@
   grid-template-columns: auto 200px;
   grid-template-areas: "title links";
   position: relative;
-  height: 120px;
+  height: 100px;
   width: 100%;
   border-bottom: 2px solid #000;
   background: #159587;
@@ -16,8 +16,7 @@
   grid-area: title;
   justify-self: center;
   display: inline-block;
-  top: 15px;
-  font-size: 4.5rem;
+  font-size: 5rem;
   font-family: Copperplate;
   text-align: center;
 }
@@ -40,6 +39,6 @@ nav{
     padding: 0 10px;
     border-left: 1px solid #333;
     text-transform: uppercase;
-    font-family: arial;
+    font-family: Cooperplate;
   }
 }
