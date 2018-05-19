@@ -1,4 +1,4 @@
-.signin-container {
+.register-container {
   position: relative;
   padding-left: 10px;
   width: 40%;
@@ -20,12 +20,12 @@
   }
 }
 
-.login-btn {
+.register-btn {
    font-family: copperplate;
    border-radius: 2px;
 }
 
-.signin-field, .signin-actions, .signin-devise-links {
+.register-field, .register-actions, .register-devise-links {
   position: relative;
   width: 50%;
 
@@ -38,4 +38,5 @@
 }
 .form-box {
   width: 50%;
+  border-radius: 5px;
 }
