@@ -1,0 +1,41 @@
+.signin-container {
+  position: relative;
+  padding-left: 10px;
+  width: 40%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(33,148,135, 0.8);
+  min-height: calc(100vh - 112px);
+  color: white;
+  align-content: center;
+  -moz-box-shadow: 0 0 3px #000;
+  -webkit-box-shadow: 0 0 3px #000;
+  box-shadow: 0 0 3px #000;
+  font-family: copperplate;
+  h2 {
+    position: relative;
+    display: inline-block;
+    margin-top: 20px;
+    font-family: copperplate;
+  }
+}
+
+.login-btn {
+   font-family: copperplate;
+   border-radius: 2px;
+}
+
+.signin-field, .signin-actions, .signin-devise-links {
+  position: relative;
+  width: 50%;
+
+  a {
+    color: inherit;
+    &:hover{
+      color: orange;
+    }
+  }
+}
+.form-box {
+  width: 50%;
+}
