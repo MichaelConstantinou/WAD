@@ -1,0 +1,58 @@
+/* Home Page */
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: no-repeat center bottom fixed url("Stanage_background.jpg");
+  position: relative;
+  background-size: cover;
+  font-family:  helvetica;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  font-family: 'Raleway', helvetica, sans;
+  font-weight: 100;
+}
+
+.content{
+  line-height: 1.5;
+}
+
+img{
+  height: 80%;
+}
+
+.index{
+  display: grid;
+  grid-template-row: 300px 300px 300px;
+  grid-template-columns: 300px 300px auto;
+  grid-template-areas:
+  "box box map"
+  "box box map"
+  "box box map";
+  row-gap: 5px;
+  grid-column-gap: 5px;
+  padding: 5px 5px;
+  background-color: rgba(33,148,135, 0.8);
+
+
+  .crag {
+    .landscape {
+      grid-area: box;
+      height: 200px;
+      width: 300px;
+      overflow: hidden;
+      background-size: cover;
+      justify-self: center;
+      z-index: 1000;
+    }
+    h3 {
+      color: white;
+    }
+
+  }
+
+}

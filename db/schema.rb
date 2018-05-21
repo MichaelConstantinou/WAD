@@ -10,7 +10,23 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180515153038) do
+ActiveRecord::Schema.define(version: 20180521103506) do
+
+  create_table "crags", force: :cascade do |t|
+    t.string "name"
+    t.string "image"
+    t.float "location_lat"
+    t.float "location_lon"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "crags_users", force: :cascade do |t|
+    t.integer "user_id"
+    t.integer "crag_id"
+    t.index ["crag_id"], name: "index_crags_users_on_crag_id"
+    t.index ["user_id"], name: "index_crags_users_on_user_id"
+  end
 
   create_table "users", force: :cascade do |t|
     t.string "email", default: "", null: false

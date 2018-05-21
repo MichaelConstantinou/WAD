@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  image: MyString
+  location_lat: 1.5
+  location_lon: 1.5
+
+two:
+  name: MyString
+  image: MyString
+  location_lat: 1.5
+  location_lon: 1.5

@@ -1,3 +1,12 @@
 <% if current_user %>
   <h1>Hello <%= current_user.first_name %>, welcome to WAD climbing!</h1>
 <% end %>
+
+<div class="index">
+  <% @crags.each do |crag| %>
+    <div class="crag">
+      <div class="landscape" style="background-image:url(<%= image_path(crag.image) %>)"></div>
+      <h3><%= crag.name %></h3>
+    </div>
+  <% end %>
+</div>
