@@ -55,4 +55,14 @@ img{
 
   }
 
+  .map-container{
+    grid-area: map;
+    align-self:start;
+  }
+
+  #home-map{
+    height:50vh;
+    width: 80% ;
+    position: relative;
+  }
 }
