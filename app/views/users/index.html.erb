@@ -3,16 +3,19 @@
 <% end %>
 
 <div class="index">
-  <% @crags.each do |crag| %>
+  <div class="crag-container">
     <div class="crag">
-      <div class="landscape" style="background-image:url(<%= image_path(crag.image) %>)"></div>
-      <h3><%= crag.name %></h3>
+      <% @crags.each do |crag| %>
+          <div class="landscape" style="background-image:url(<%= image_path(crag.image) %>)">
+          </div>
+          <h3 class="name"><%= crag.name %></h3>
+      <% end %>
     </div>
-  <% end %>
-</div>
+  </div>
 
- <div class="map-container">
+  <div class="map-container">
     <h2>Crags:</h2>
+    <br>
     <div id="home-map"></div>
   </div>
 </div>

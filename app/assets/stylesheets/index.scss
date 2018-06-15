@@ -27,42 +27,51 @@ img{
 
 .index{
   display: grid;
-  grid-template-row: 300px 300px 300px;
-  grid-template-columns: 300px 300px auto;
-  grid-template-areas:
-  "box box map"
-  "box box map"
-  "box box map";
-  row-gap: 5px;
-  grid-column-gap: 5px;
-  padding: 5px 5px;
+  grid-template-columns: 60% 40%;
+  grid-template-areas: "crag map";
   background-color: rgba(33,148,135, 0.8);
+  }
+
+.crag-container {
+   grid-area: crag;
+   display: grid;
+   grid-template-columns: 50% 50%;
+   grid-row: auto;
+   grid-template-areas: "box box";
+    padding: 10px 0px 0px 10px;
 
 
   .crag {
+    grid-area: box;
+
     .landscape {
       grid-area: box;
-      height: 200px;
-      width: 300px;
       overflow: hidden;
+      height: 200px;
+      width: 280px;
       background-size: cover;
       justify-self: center;
-      z-index: 1000;
     }
+
     h3 {
       color: white;
+      padding-bottom: 10px;
     }
-
   }
 
-  .map-container{
-    grid-area: map;
-    align-self:start;
-  }
-
-  #home-map{
-    height:50vh;
-    width: 80% ;
-    position: relative;
-  }
 }
+
+.map-container{
+  grid-area: map;
+  align-self: start;
+}
+
+#home-map{
+  height:50vh;
+  width: 80% ;
+  position: relative;
+}
+
+
+
+
